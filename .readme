@@ -1,0 +1,55 @@
+// BIKE PARK //
+
+
+Configure o arquivo .env e o arquivo config/database.php com os dados do banco de dados mysql
+
+
+Para adicionar as tabelas no banco de dados utilize o comando php artisan migrate
+
+
+Para inicializar o servidor PHP utilize o comando php artisan serve e ele inicia na porta 8000
+caso deseja mudar a porta utilize o comando --port
+
+
+/* Rotas */
+    /login para realizar o login tanto como admin quanto usuário comum
+
+    //controller administração
+    /admin/cadastrar = cadastrar administrador , o'que se espera: nome,email,senha
+
+    /admin/alterar = alterar administador, o'que se espera : nome,email,senha  OBS: valores podem ser nullos
+    /admin/desativar = desativar administrador, o'que se espera: usuario_id
+    /admin/ativar = ativar administrador, o'que se espera: usuario_id
+    /admin = = visualizar administrador, o'que se espera: usuario_id
+    /admin/listar = retorna os usuários administrativos
+
+
+    //controller de localizações
+
+    /admin/cadastrar/localizacao = cadastro de localizações, o'que se espera ? endereco,numero,complemento
+    /admin/alterar/localizacao = endereco,numero,complemento podendo ser nulos
+    /admin/desativar/localizacao = localizacao_id
+    /admin/ativar/localizacao = localizacao_id
+    /admin/listar/localizacoes = nada
+    /admin/listar/localizacoes/pendentes = nada
+    /admin/localizacao = localizacao_id
+
+    //controller de feedback
+
+     /admin/listar/feedbacks = nada
+     /admin/feedback = feedback_id
+
+
+
+    //usuario controller
+
+    /admin/listar/usuarios =  nada
+    /admin/usuario = usuario_id
+    /admin/cadastrar/usuario = nome,email,senha
+    /admin/desativar/usuario = usuario_id
+    /admin/ativar/usuario = usuario_id
+    /admin/alterar/usuario =
+
+
+
+
